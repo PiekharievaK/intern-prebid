@@ -1,3 +1,10 @@
+piekharieva Bid Adapter
+
+![tests](./public/image.png)
+![fetch](./public/image2.png)
+
+
+
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/prebid/Prebid.js.svg)](https://isitmaintained.com/project/prebid/Prebid.js "Percentage of issues still open")
 [![Coverage Status](https://coveralls.io/repos/github/prebid/Prebid.js/badge.svg?branch=master)](https://coveralls.io/github/prebid/Prebid.js?branch=master)
 
