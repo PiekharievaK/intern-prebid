@@ -7,7 +7,7 @@
 	<title>Prebid.js Banner Example</title>
 
 	<!-- Prebid.js -->
-	<script async src="http://localhost:4444/bundle?modules=piekharievaBidAdapter"></script>
+	<script async src="http://localhost:4444/bundle?modules=appnexusBidAdapter"></script>
 
 	<!-- Google Publisher Tag -->
 	<script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
@@ -25,11 +25,25 @@
 				}
 			},
 			bids: [{
-          bidder: 'piekharieva',
-          params: {
-            aid: 350975
-          }
-        }]
+				bidder: 'appnexus',
+				params: {
+					placementId: 13144370
+				}
+			}]
+		 }
+		,{
+			code: 'div-gpt-ad-1460505748561-1',
+			mediaTypes: {
+				banner: {
+					sizes: [[300, 250], [300, 600]],
+				}
+			},
+			bids: [{
+				bidder: "appnexus",
+				params: {
+					placementId: 13144370
+				}
+			}]
 		}
 	];
 	</script>

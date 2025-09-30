@@ -5,7 +5,7 @@ import { deepAccess, parseSizesInput } from "../src/utils.js";
 const BIDDER_CODE = "piekharieva";
 const AUCTION_PATH = "/auction/";
 const PROTOCOL = "https://";
-const HOST = "intern-news-server.onrender.com";
+const HOST = "intern-news-server-1.onrender.com";
 
 function getUri() {
   return PROTOCOL + HOST + AUCTION_PATH;
@@ -16,7 +16,7 @@ export const spec = {
   supportedMediaTypes: [BANNER],
 
   isBidRequestValid: function (bid) {
-    return !!(bid.params && bid.params.aid);
+    return !!(bid.params?.aid);
   },
 
   buildRequests: function (bidRequests, adapterRequest) {
@@ -85,7 +85,7 @@ function createBid(serverBid, bidRequest) {
     netRevenue: true,
     ttl: 300,
     mediaType: "banner",
-    ad: serverBid.ad || "",
+    ad: serverBid.ad,
   };
 }
 
